@@ -37,4 +37,4 @@ if __name__ == "__main__":
 # ngrok http 5000
 # https://mega-api-painel.app.br/megaapi/
 
-#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
+
