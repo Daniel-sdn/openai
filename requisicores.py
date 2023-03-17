@@ -18,8 +18,8 @@ def send_message(preJid, mensagemTranscrita):
 
     payload = json.dumps({
       "messageData": {
-        "to": preJid,
-        "text": mensagemTranscrita
+        "to": "5511994954119@s.whatsapp.net",
+        "text": "mensagemTranscrita"
       }
     })
 

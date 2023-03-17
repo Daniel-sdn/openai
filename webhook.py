@@ -5,27 +5,21 @@ import json
 import requests
 import http.client
 import tratamento
-import transcricao
 
 app = Flask(__name__)
 
 @app.route('/whats', methods=['POST'])
 def main():
     data = request.get_json(silent=True)
-    messageType = data['messageType']  
-    print(messageType)
-    if messageType == 'conversation':
-        tratamento.detectarMensagem(data, type=messageType)
-        transcricao.transcreve_data(data) #data
-    elif messageType == 'video':
-        tratamento.detectarMensagem(data)    
-    
+    messageType = data['messageType']   
     
     # chamada da funçao detectarMensagem
+    tratamento.detectarMensagem(data) #data
      
     print(f'------------------------------- raw data:  {messageType}  ----------------------------------------')
     json_data = json.dumps(data, indent=4, ensure_ascii=False)
     print(json_data) 
+    print()
     print("\n--------------------      eof             -----------------\n")
     print()
     
