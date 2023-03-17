@@ -60,7 +60,7 @@ def detectarMensagem(data):
         
         #Transcricao dp audio - whisper openai
         import openai
-        openai.api_key = "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"
+        openai.api_key = "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"
         #audio_file = open("/home/dani-boy/openai/audio/teste2-mp3-openai.mp3", "rb")
         audio_file = open("/home/dani-boy/openai/audio/audioTeste.wav", "rb")
         transcript = openai.Audio.transcribe("whisper-1", audio_file)
