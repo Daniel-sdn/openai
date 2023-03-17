@@ -1,0 +1,140 @@
+-------------------------------   raw data   ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "imageMessage",
+    "key": {
+        "remoteJid": "status@broadcast",
+        "fromMe": false,
+        "id": "0A0F5274B64BE89D84DE4C17AE19C510",
+        "participant": "5511998624137@s.whatsapp.net"
+    },
+    "messageTimestamp": 1678891521,
+    "pushName": "Cinthia Arias",
+    "broadcast": true,
+    "message": {
+        "imageMessage": {
+            "url": "https://mmg.whatsapp.net/v/t62.7118-24/19937967_173892748762523_8712291409128848717_n.enc?ccb=11-4&oh=01_AdTZnRmZy_gEpBW_IrzTYLVeFynYAuvmO3v_RWzGYgKQjw&oe=64395B93&mms3=true",
+            "mimetype": "image/jpeg",
+            "caption": "*SUPER OFERTA* - Condicionador 200ml \ud83d\udc9a\ud83e\udd0d de R$34,90 por *R$28,90*",
+            "fileSha256": "HvOx0KGixtFGSQahycs3ps5Th3OZwkClnlw1pQ1Y+ZM=",
+            "fileLength": "132150",
+            "height": 1156,
+            "width": 1280,
+            "mediaKey": "iwGJ29DE9szHc6wCqBzpDkJsZJ2iBc/uj1JIKHmNQOk=",
+            "fileEncSha256": "SGhUcYFZhQnRrQliYXZXRksuQpAm/sb6PjRZ472kqs8=",
+            "directPath": "/v/t62.7118-24/19937967_173892748762523_8712291409128848717_n.enc?ccb=11-4&oh=01_AdTZnRmZy_gEpBW_IrzTYLVeFynYAuvmO3v_RWzGYgKQjw&oe=64395B93&_nc_hot=1678891517",
+            "mediaKeyTimestamp": "1678891516",
+            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEAASAMBIgACEQEDEQH/xAAuAAABBQEAAAAAAAAAAAAAAAAEAAIDBQYBAQEBAQAAAAAAAAAAAAAAAAACAQD/2gAMAwEAAhADEAAAAATQrgmFxHDawKxqlZXFj3NUat7oczpiZuP69UUehFGmEvobs6uqobU5TTEndiYtAOVwacked7MJi1C0NAWZedomyX1YDGlooKRXPTFr/8QAKRAAAgICAQIFAwUAAAAAAAAAAQIAAwQREBJhISMxQUIzUXEFExQiMv/aAAgBAQABPwCioWsQTBh1wYlQ9oMeofGZiKnRocDc2YGmG3mwTTfaGZ30we865iqrKJZY22UqOMRtXCVDfjNmFeoTOXyDNE6AmNU4UeEzFK2+nGN9dJV4HXOcu6rJ+n0L0dbRWUTMoF1RI9RPcCUnVqfmU85X9q7PxMA+SJqL/mXjV7jvFOnU95U2gpn7gjWExhtSO0oQIgE9SJsKplrdVznvPcSptop7QHgnwleb0Oyt95XmUn5zLzlK9FZgPrNRcx1UKBP5t0OVeflDdafmeffj/8QAHBEBAQACAgMAAAAAAAAAAAAAAQACEBExEkJx/9oACAECAQE/AH7Nj1c69tEGnsnIiNJeLBxv/8QAGREBAAMBAQAAAAAAAAAAAAAAAQAQESAC/9oACAEDAQE/APS7y0Qp5SZMmV//2Q=="
+        }
+    }
+}
+
+127.0.0.1 - - [15/Mar/2023 11:45:22] "POST /whats HTTP/1.1" 200 -
+-------------------------------   raw data   ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "imageMessage",
+    "key": {
+        "remoteJid": "status@broadcast",
+        "fromMe": false,
+        "id": "7B85E4331402C01BD4BC4361BAD6B752",
+        "participant": "5511998624137@s.whatsapp.net"
+    },
+    "messageTimestamp": 1678891530,
+    "pushName": "Cinthia Arias",
+    "broadcast": true,
+    "message": {
+        "imageMessage": {
+            "url": "https://mmg.whatsapp.net/v/t62.7118-24/56155334_213536684558465_1717969726327929714_n.enc?ccb=11-4&oh=01_AdQa6QfBYKl9AvdpNmXl4owIpQskT7KixMvqSvQB_7_iyg&oe=64394643&mms3=true",
+            "mimetype": "image/jpeg",
+            "caption": "*SUPER OFERTA* - Hidratante corporal \ud83d\udc9a de R$51,90 por *R$32,90*",
+            "fileSha256": "vYmfdBSXtgu1Ix8I0YwwXCRY+UbZtEgjyrhVnBPPCTs=",
+            "fileLength": "13988",
+            "height": 418,
+            "width": 385,
+            "mediaKey": "32UgHKX60JW9T6NKELF9KFGm1d1dlIz8mtG6MLIielw=",
+            "fileEncSha256": "L2STuL7JPLb92LdrJWLYevqdI7caEWqLuOSM65+8aj4=",
+            "directPath": "/v/t62.7118-24/56155334_213536684558465_1717969726327929714_n.enc?ccb=11-4&oh=01_AdQa6QfBYKl9AvdpNmXl4owIpQskT7KixMvqSvQB_7_iyg&oe=64394643&_nc_hot=1678891528",
+            "mediaKeyTimestamp": "1678891528",
+            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIAGAAWAMBIgACEQEDEQH/xAAwAAADAQEBAAAAAAAAAAAAAAAAAwQBBQIBAAMBAQEAAAAAAAAAAAAAAAECAwQABf/aAAwDAQACEAMQAAAA7xIvJC9vIuJ6JmtqEOiAlbDWJ0CQR9TUc508uQ/Zgb0OVQl64rVZfR53X4XeDAwEY+d156Q5rtNeGjqSWz9bReLRXsxWYYQijNAnP8Xbry0P0HpYlmdy/DFqWnkhBYAXzXG2tK9V5rTTFdwuPBHogZx5AA8y2LJx/PTanQiUHlU0eX86swz7f//EACoQAAICAQMDAgUFAAAAAAAAAAECAAMRBCExEBIiE0EFIDJRYSOBkbLR/9oACAEBAAE/AOtXPyahnWtihAIh+IPSAbk2+4g1tFuMPg/Y7QEGXNYpyqM3lwDjbE9WzLfo24AzzPXtyQaLAPY90osACljued8wMDwehIAJMvsFiAIc5M1Hk6J+YtYcYZQZWoTYDEs9v8JljBADgZPHiZklvL+pg2GBEtdfeU6gPsZrXxVgcttE8Vl1pXfYkTTeVakjciWLhpb7S05c7j+TFIzz1qosbfiPpvUC5Y7R9O4G28vR/UVCCMmaceIlw4MtPsCf2luc8tFcgjmAgzTV97dx4EAghEtUMJTxLfp6XLkZ66YYrEEdipnrAkAiPKTyJbwOhGRHUq0wTgCUp2qBOJsRGrXII2jSr6zLTx1sTuE01GPJuYBGDe0PRpX9ZlnI6mLxBMwr9jMSxsCaZwxaOcser8Sq0EQNHJI2ndtHsxL7sD8maVihEbnPU7iMWRsiV6hG9953iPaBLL4uXbuMTYiKe5fkZcx6ZixOCYWc8iJUXO8FAxDViUKcT//EAB4RAAICAgIDAAAAAAAAAAAAAAECABEDECExEkFh/9oACAECAQE/AKlHY5Gsa+RlRlUxka+ol8wzEabRNmXHh70mS1+7aHvWL3srYJ2DUDwuIuRCKjjmf//EACERAAICAgIBBQAAAAAAAAAAAAECAAMQESExMhIUQVGR/9oACAEDAQE/AICFYbOCdCAFgcWOVWMTKLLQ2l2wjbMSPwxlw2kMoQJWv2RszYglnlj25Nmh1kR/I4r+cvcEsVf2Hs4B1A8Z+OI6WerfcUFlBn//2Q=="
+        }
+    }
+}
+
+--------------------      eof             -----------------
+
+127.0.0.1 - - [15/Mar/2023 11:45:31] "POST /whats HTTP/1.1" 200 -
+ * Detected change in '/home/dani-boy/openai/webhook.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 876-143-776
+-------------------------------   raw data:  imageMessage  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "imageMessage",
+    "key": {
+        "remoteJid": "status@broadcast",
+        "fromMe": false,
+        "id": "7FCC761E8C858BD1CCB95D49564C856E",
+        "participant": "5511998624137@s.whatsapp.net"
+    },
+    "messageTimestamp": 1678891586,
+    "pushName": "Cinthia Arias",
+    "broadcast": true,
+    "message": {
+        "imageMessage": {
+            "url": "https://mmg.whatsapp.net/v/t62.7118-24/30767276_1382145725866883_2200474554946859409_n.enc?ccb=11-4&oh=01_AdSUF420SVcXLJJJYU-6KKn9n-72689Ez43dMKIs9ltmuA&oe=64392FDD&mms3=true",
+            "mimetype": "image/jpeg",
+            "caption": "Preeente mam\u00e3e e beb\u00ea *relaxante* - de R$132,80 por *R$74,90* - \u00daNICA PE\u00c7A \n\n\ud83d\udc9cCol\u00f4nia 100ml\n\ud83d\udc9cSabonete em espuma 200ml\n\ud83d\udc9cCaixa especial presente\u00e1vel",
+            "fileSha256": "2LRk7Mgb8qf36ck4OHnVMrzZw9iT1axeuIMI7DT9cWc=",
+            "fileLength": "48802",
+            "height": 917,
+            "width": 1004,
+            "mediaKey": "1osCbL4S9jf3giaTVvW3No9msIAycOfmo1iPdZRR/bc=",
+            "fileEncSha256": "Ah1PNjwQkN6MEzIBd6C8nx4sr0DOeBHMlqgnjtNBC1g=",
+            "directPath": "/v/t62.7118-24/30767276_1382145725866883_2200474554946859409_n.enc?ccb=11-4&oh=01_AdSUF420SVcXLJJJYU-6KKn9n-72689Ez43dMKIs9ltmuA&oe=64392FDD&_nc_hot=1678891584",
+            "mediaKeyTimestamp": "1678891584",
+            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIADkAPwMBIgACEQEDEQH/xAAuAAACAwEBAAAAAAAAAAAAAAAABAEDBQIGAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAPTAUQlLOShzGiZLsshBI8kbzbwUBD+do2mUnaBRujrKtTbTrHWvjbS9LscZUbGgsQ2DVjb9N9f/xAAnEAABAwMEAQMFAAAAAAAAAAABAAIRAyExBBASUTITICIjQVJTYf/aAAgBAQABPwDaR2pHa5Dtc2dr1GfkECDjfycbrgT91wPa4un+KDdaRx5Rs4w0poyRlGo7nxKMxGESLoGzrrSCTtWe0MIlMcAE4ltQOhVKjSAYKLrHpN8J7WjsCdqocQ5Upm6MFOLhZOLhjCafgFofAp+ETZGA/aobpwNysMaCtGPpqoZCJTuRfhXAwnDVFxIphAav9YRGoMTSK0siiARCPsO7PFf/xAAaEQADAAMBAAAAAAAAAAAAAAAAAREQIDFB/9oACAECAQE/ACEJp4JwYuD5iYbP/8QAGhEAAgIDAAAAAAAAAAAAAAAAARAAESAxUf/aAAgBAwEBPwBXjxCHbt//2Q=="
+        }
+    }
+}
+
+--------------------      eof             -----------------
+
+127.0.0.1 - - [15/Mar/2023 11:46:27] "POST /whats HTTP/1.1" 200 -
+-------------------------------   raw data:  imageMessage  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "imageMessage",
+    "key": {
+        "remoteJid": "status@broadcast",
+        "fromMe": false,
+        "id": "81416395DB1D47612FED07A62F3B4531",
+        "participant": "5511998624137@s.whatsapp.net"
+    },
+    "messageTimestamp": 1678891596,
+    "pushName": "Cinthia Arias",
+    "broadcast": true,
+    "message": {
+        "imageMessage": {
+            "url": "https://mmg.whatsapp.net/v/t62.7118-24/30051294_6423999740957605_6146354681794775669_n.enc?ccb=11-4&oh=01_AdQq2KbiCgtMLE9rhTPqSnFUx5zVQKp_NrRUyj6VUD-xcw&oe=64394338&mms3=true",
+            "mimetype": "image/jpeg",
+            "caption": "Len\u00e7o umedecido sem fragr\u00e2ncia - embalagem com 50 folhas \ud83d\udc9a\ud83e\udd0d de R$24,90 por *R$18,90*",
+            "fileSha256": "5ns4a7lLIODHGsivp+INudj6k9zvF9atdX4xsk5Rx/c=",
+            "fileLength": "42679",
+            "height": 1080,
+            "width": 765,
+            "mediaKey": "7EWIW8/NTiYNDPoK1ihZcDGaxbZh2jxsZcnm3d0cvIQ=",
+            "fileEncSha256": "lRhwEmeCuyX4LVuk2Hx8ywWqcCH+w067dwr4J0aLoKE=",
+            "directPath": "/v/t62.7118-24/30051294_6423999740957605_6146354681794775669_n.enc?ccb=11-4&oh=01_AdQq2KbiCgtMLE9rhTPqSnFUx5zVQKp_NrRUyj6VUD-xcw&oe=64394338&_nc_hot=1678891594",
+            "mediaKeyTimestamp": "1678891593",
+            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEMAMAMBIgACEQEDEQH/xAAtAAADAQEBAAAAAAAAAAAAAAAAAgMBBAUBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAA9/YvLQTUbYVqeNGKCkb0c99JLqgMRl+foJLVaYUNpJyoAAAAf//EACMQAAICAgEEAgMAAAAAAAAAAAABAhEDEjIQEyAiIUEEMWL/2gAIAQEAAT8Ay5HDWiOaLO4dw7iIT3s/IvaNISSX6LXSSTMMUoGe9o0fRZZVIx8EZeURzqajXV/KMXBGblDxxcEZ+cCm2iihmLgjOvaJrf2KP9Cg/n2HCkY+KMsW3E1ZrI1kj2Md2/P/xAAYEQEBAQEBAAAAAAAAAAAAAAARAQAgEP/aAAgBAgEBPwB0r4OhITiYev/EABQRAQAAAAAAAAAAAAAAAAAAADD/2gAIAQMBAT8Af//Z"
+        }
+    }
+}
+
+--------------------      eof             -----------------

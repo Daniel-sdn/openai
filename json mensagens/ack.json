@@ -1,0 +1,16 @@
+
+
+
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "message.ack",
+    "key": {
+        "remoteJid": "5516993301744@s.whatsapp.net",
+        "id": "7483C171AFF25A4646F950E120773F1D",
+        "fromMe": false
+    },
+    "update": {
+        "status": 4
+    }
+}

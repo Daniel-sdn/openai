@@ -1,0 +1,97 @@
+1. Nova coonversa
+
+-------------------------------   raw data:  conversation  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "conversation",
+    "key": {
+        "remoteJid": "555199498430@s.whatsapp.net",
+        "fromMe": true,
+        "id": "3A217783FA1B8031B28A"
+    },
+    "messageTimestamp": 1678893662,
+    "pushName": "Daniel",
+    "broadcast": false,
+    "status": 2,
+    "message": {
+        "conversation": "N\u00e3o vieram as mensagens de som"
+    }
+}
+
+--------------------      eof             -----------------
+
+127.0.0.1 - - [15/Mar/2023 12:21:02] "POST /whats HTTP/1.1" 200 -
+
+
+
+2. Indicou que status mudou
+-------------------------------   raw data:  message.ack  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "message.ack",
+    "key": {
+        "remoteJid": "555199498430@s.whatsapp.net",
+        "id": "3A217783FA1B8031B28A",
+        "fromMe": true
+    },
+    "update": {
+        "status": 3
+    }
+}
+
+--------------------      eof             -----------------
+
+127.0.0.1 - - [15/Mar/2023 12:21:07] "POST /whats HTTP/1.1" 200 -
+
+
+------------------------------- seq: 1  raw data:  message.ack  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "message.ack",
+    "key": {
+        "remoteJid": "555199498430@s.whatsapp.net",
+        "id": "3A125BE09231BF4EDB7F",
+        "fromMe": true
+    },
+    "update": {
+        "status": 4
+    }
+}
+
+--------------------      eof             -----------------
+
+127.0.0.1 - - [15/Mar/2023 13:38:24] "POST /whats HTTP/1.1" 200 -
+------------------------------- seq: 1  raw data:  conversation  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "conversation",
+    "key": {
+        "remoteJid": "555199498430@s.whatsapp.net",
+        "fromMe": false,
+        "id": "4C18D817E2CF00B0072E7265740496DF"
+    },
+    "messageTimestamp": 1678898308,
+    "pushName": "Lidiane Klein",
+    "broadcast": false,
+    "message": {
+        "conversation": "😘",
+        "messageContextInfo": {
+            "deviceListMetadata": {
+                "senderKeyHash": "K6O48cjYUpQPJQ==",
+                "senderTimestamp": "1678284067",
+                "recipientKeyHash": "mubBddi68IvXLQ==",
+                "recipientTimestamp": "1678794452"
+            },
+            "deviceListMetadataVersion": 2
+        }
+    },
+    "verifiedBizName": "Lidiane Klein"
+}
+
+--------------------      eof             -----------------
+
+127.0.0.1 - - [15/Mar/2023 13:38:28] "POST /whats HTTP/1.1" 200 -

@@ -1,0 +1,18 @@
+{'instance_key': 'megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA', 
+'jid': '5511994954119:27@s.whatsapp.net', 
+'messageType': 'conversation', 
+'key': {
+    'remoteJid': '5511994954119@s.whatsapp.net', 
+    'fromMe': True, 
+    'id': '3A03C7C3C78876FDCE02'}, 
+    'messageTimestamp': 1678884161, 
+    'pushName': 'Daniel', 
+    'broadcast': False, 
+    'status': 2, 
+    'message': {
+        'conversation': 'Teste'
+        }
+    }
+
+    
+127.0.0.1 - - [15/Mar/2023 09:42:42] "POST /whats HTTP/1.1" 200 -

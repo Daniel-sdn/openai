@@ -1,0 +1,36 @@
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "conversation",
+    "key": {
+        "remoteJid": "5516993301744@s.whatsapp.net",
+        "fromMe": true,
+        "id": "3A7A3E08EF3B5054226E"
+    },
+    "messageTimestamp": 1678891604,
+    "pushName": "Daniel",
+    "broadcast": false,
+    "status": 2,
+    "message": {
+        "conversation": "Bom dia prima"
+    }
+}
+
+
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "conversation",
+    "key": {
+        "remoteJid": "555193130284@s.whatsapp.net",
+        "fromMe": true,
+        "id": "3AEAA51C5E36340D078D"
+    },
+    "messageTimestamp": 1678892068,
+    "pushName": "Daniel",
+    "broadcast": false,
+    "status": 2,
+    "message": {
+        "conversation": "Mas vai caber a cadeira? N\u00e3o vai atrapalhar?"
+    }
+}

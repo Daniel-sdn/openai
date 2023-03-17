@@ -1,0 +1,33 @@
+------------------------------- seq: 1  raw data:  audioMessage  ----------------------------------------
+{
+    "instance_key": "megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA",
+    "jid": "5511994954119:27@s.whatsapp.net",
+    "messageType": "audioMessage",
+    "key": {
+        "remoteJid": "5511994954119@s.whatsapp.net",
+        "fromMe": true,
+        "id": "3A930F373D61FB9A6FC5"
+    },
+    "messageTimestamp": 1678898670,
+    "pushName": "Daniel",
+    "broadcast": false,
+    "status": 2,
+    "message": {
+        "audioMessage": {
+            "url": "https://mmg.whatsapp.net/v/t62.7117-24/31516251_1619569411896102_1278058609637425676_n.enc?ccb=11-4&oh=01_AdRqgRPV2ehbUIN2DtS6MUjX6gL1X5nCf8D1b16sJJYoTw&oe=643977D5&mms3=true",
+            "mimetype": "audio/ogg; codecs=opus",
+            "fileSha256": "LcxTaWPkmPlu3iEEtKbMG4sVwdHQrSRZUqNaJv90QY8=",
+            "fileLength": "5752",
+            "seconds": 2,
+            "ptt": true,
+            "mediaKey": "LCM5gFmVOvQ01AbWzScspnV5TLqKT2ZdyXjeBn6pI1M=",
+            "fileEncSha256": "EMr8wjiRSagFAxLkdfKw2KZlfwYQ3FW9+kuSFPmdf5A=",
+            "directPath": "/v/t62.7117-24/31516251_1619569411896102_1278058609637425676_n.enc?ccb=11-4&oh=01_AdRqgRPV2ehbUIN2DtS6MUjX6gL1X5nCf8D1b16sJJYoTw&oe=643977D5",
+            "mediaKeyTimestamp": "1678898667",
+            "streamingSidecar": "Mb+3zcDDckra6w==",
+            "waveform": "AwMDAwQEBAQDAwMDAwMEBAUHCAoSKT9WZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGBbVlFHPDEmIh8cGQ=="
+        }
+    }
+}
+
+--------------------      eof             -----------------

@@ -1,0 +1,7 @@
+1: Roda o arquivo webhook.py pra rodar o webhook flask
+
+2: Loga no NGROK e roda o comando 'NGROK http 5000' onde 5000 é a porta onde o flask está rodando
+
+3: pega o link gerado pelo ngrok e coloca como webhook na mega-api
+
+4: No arquivo tratamento.py é onde vai ser feito todo o parse da mensagem que está vindo como parâmetro na função detectarMensagem(mensagem) onde mensagem é o parâmetro
