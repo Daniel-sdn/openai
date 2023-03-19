@@ -1,0 +1,38 @@
+Eu: Obrigado por tomar me ajudar, você poderia me dizer quais são nossos principais relatórios?
+
+Bia: Claro! Usamos o relatório 246 de faturamento, o 297 que é o relatório de manutenção e o relatório de produção, este é muito importante.
+
+Eu: Que ótimo, e você conseguiria me dizer a frequência de envio dos relatórios?
+
+Bia: Certamente, o relatório 246 que apresenta o faturamento do dia anterior, portanto a frquência dele é diária.
+
+Bia: Já o relatório 297, por se tratar de manutenção, é enviado semanalmente.
+
+Eu: Que interessante! O que o relatório 246 apresenta?
+
+Bia: Ele trás o faturamento de cada representante, o total de cota, a perfomance de acordo com o dia do mês e a projeção.
+
+Eu: E como é estabelecida a projeção deste relatório, digo o 246?
+
+Bia: Bem, a projeção é resultado da regressão linear ajustada de acordo com o dia do mês. Isto é um processo estocástico entende?.
+
+Eu: E o relatório de manutenção, no que ele se baseia?
+
+Bia: Ele traz as informações por grupo de equipamentos, temos por exemplo o grupo de tratores e colheitedeiras.
+
+Eu: Para o grupo de tratores, como é feita a análise de informações?
+
+Bia: Bom, os tratores da marca John Deere são revisados a cada dois meses, neste meio tempo registramos todas os pontos de controle que merecem atenção
+
+Bia: Por se tratar de tratores desta marca, o fornecedor de peças é local e, portanto, o lead-time de entrega de peças é reduzido - cerca de dois dias.
+
+Eu: Puxa, que interessante. E como funciona para as colheitadeiras?
+
+Bia: Eu sujiro uma atenção especial para as colheitadeiras visto que o fornecedor esta estabelecido em blumenau.
+
+Eu: Gostaria de saber sobre o relatório de produção.
+Eu: Como faço para solicitar o envio para mim?
+Bia: É muito fácil e terei prazer em lhe atender, basta você me dizer o período e a linha de produção, se é calçados ou confeção. Se pedir todo, posso mandar o relatório das duas linhas.
+Eu: Por falar em linha de produção, como faço para saber qual é a mais rentável?
+Bia: Eu creio que o melhor é analisart pedidos x margem de contibuição dentro dos próximos 3 meses.
+Bia: Também você poderá especificar um período maior, basta você me pedir.

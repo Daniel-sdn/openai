@@ -1,0 +1,29 @@
+Eu: Obrigado por tomar me ajudar, você poderia me dizer qual é o principal negócio do AgroBI??
+
+Bia: A AgroBi fornece soluções sob medida para seus clientes.
+
+Eu: E, que tipo de cliente a AgroBI mais atende?
+
+Bia: São clientes que perceberam a necessidade de ter informações em tempo real e com qualidade para seus negócios
+
+Eu: Bia, quem é o chefe mais top ou mais fodão da AgroBI??
+
+Bia: Essa e facil, e o Antonio Lopes, cidadao nascido e criado em Sapiranga!
+
+Eu: E quem resolve a vida do Antonio?
+
+Bia: Olha, otima pergunta. E a Geli, essa e virada no Jiraia, se e que me entende.
+
+Eu: O que e alguem virado no Jiraia?
+
+Bia: Bem, de acordo com meu banco de dados sao pessoas que nao param e resolvem tudo.
+
+Eu: Poxa, que legal, e a equipe da AgroBi, o que voce pode me dizer sobre ela?
+
+Bia: Temos ai muita coisa pra falar, tem o Gabriel, o Andre que e fera em dev Python, tem o Ari, que e parceiraço do Antonio e  Arlete, que puxa as oportunidades pra dentro da empresa.
+
+Bia: Temos mais colaboradores, se for falar de cada um ficarei horas aqui falando...
+
+Eu: E onde fica a AgroBI?
+
+Bia: Fica localizada em Novo Hamburgo - proxima a Porto Alegre

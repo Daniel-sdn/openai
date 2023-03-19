@@ -1,45 +1,25 @@
 from urllib import response
 from flask import Flask, request, jsonify
-import tratamento
+import tratamento_evoluindo
 import json
 import requests
 import http.client
+import tratamento_evoluindo
 import time, copy
-import modules.requisicores as req
-import modules.botopenai as bot 
-import modules.transcricao as transc
-import modules.botopenai as botai
-#import modules.workmessage as 
 
 app = Flask(__name__)
-
-
 
 @app.route('/whats', methods=['POST'])
 def main():
     since = time.time()
     data = request.get_json(silent=True)
-    instanceKey = data["instance_key"]
-    messageType = data['messageType']
-    fromMe = data['key']['fromMe']
-    remoteJid = data['key']['remoteJid'] 
-    
-    
-    
-    print()
-    print("--------------------------Principais Dados --------------------------")
-    print(instanceKey)
-    print(remoteJid)
-    print(fromMe)
-    print(messageType)
-    intentWelcome = ['bia, pode me ajudar?','oi bia', 'ola bia', 'olá bia', 'teste', 'menu', 'opções', 'opcoes']
-    intentGoodbye = ['obrigado pela ajuada','ate mais', 'fim', 'encerrar', 'obrigado bia']
-    message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
-
+    messageType = data['messageType'] 
+    fromMe = data['key']['fromMe']  
+ 
     if fromMe == True:
-        tratamento.detectarMensagem(data) #data
+        tratamento_evoluindo.detectarMensagem(data) #data
     # chamada da funçao detectarMensagem
-    #messageUser = (f"{name} perguntou:\n{message}")
+    
      
     print(f'------------------------------- raw data:  {messageType}  ----------------------------------------')
     
@@ -71,7 +51,3 @@ if __name__ == "__main__":
 
 # https://github.com/openai/openai-python
  
- 
- 
- 
- #textotranscrito = (f'{pushName} peguntou: {transcribed_text}\n')

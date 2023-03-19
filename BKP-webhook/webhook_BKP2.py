@@ -1,6 +1,6 @@
 from urllib import response
 from flask import Flask, request, jsonify
-import tratamento
+import tratamento_bkp3
 import json
 import requests
 import http.client
@@ -35,9 +35,45 @@ def main():
     intentWelcome = ['bia, pode me ajudar?','oi bia', 'ola bia', 'olá bia', 'teste', 'menu', 'opções', 'opcoes']
     intentGoodbye = ['obrigado pela ajuada','ate mais', 'fim', 'encerrar', 'obrigado bia']
     message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
+    
+    
+    # Assuming `req` is an instance of some request object
+    messageBot = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
+    if messageType == 'audioMessage':  # audio message
+        while True:
+            messagem, name = transc.transcreve_data(data)
+            user_input = messagem
+            if not botai.ask_ai(user_input, remoteJid):
+                req.send_message(remoteJid, "Bia: Goodbye!")
+                break  
+        # 
+        # if messagem.lower() in intentWelcome:
+        #     req.send_message(remoteJid, messageBot)
+            
+        # botai.ask_ai(messagem, remoteJid)
+        #     #data = request.get_json(silent=True)
+        #     # messagemIter = transc.transcreve_data(data)
+        #     # remoteJid = data['key']['remoteJid'] 
+        #     # botai.ask_ai(messagemIter, remoteJid)
+        #     # if messagem.lower() in intentWelcome:    
+            
+      
+        #menssage_text = (f"{name} perguntou:\n{message}")
+        #req.send_message(remoteJid, menssage_text)    
 
-    if fromMe == True:
-        tratamento.detectarMensagem(data) #data
+        
+        #req.send_message(remoteJid, messagem)
+                #Tratamento de intents welcomes
+
+        
+        
+        
+    
+    
+    
+    #if fromMe == True:
+    
+    #tratamento.detectarMensagem(data) #data
     # chamada da funçao detectarMensagem
     #messageUser = (f"{name} perguntou:\n{message}")
      

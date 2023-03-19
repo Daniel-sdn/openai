@@ -147,6 +147,13 @@ def detectarMensagem(data):
         
         #menssage_text = (f"messageType: {messageType}\nFrom me: {fromMe}\n\nOlá {pushName},  \nMensagem: {mensagem } \n\nDevice: {remoteJid}")
         
+        # import openai
+
+        # openai.api_key = "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"
+        
+        # resposta = bot.ask_ai(mensagem)
+        # req.send_message(remoteJid, resposta)
+        
         
         import openai
 

@@ -7,8 +7,12 @@ import io
 from openai import Audio
 from pydub import AudioSegment
 
+#preJid = '5511994954119@s.whatsapp.net'
 
-def send_message(preJid, mensagemTranscrita):
+#mensagemTranscrita = 'Reseres'
+
+
+def send_message(destinatario, mensagem):
     conn = http.client.HTTPSConnection("api5.megaapi.com.br")
 
     headers = {
@@ -18,8 +22,8 @@ def send_message(preJid, mensagemTranscrita):
 
     payload = json.dumps({
       "messageData": {
-        "to": "5511994954119@s.whatsapp.net",
-        "text": "mensagemTranscrita"
+        "to": destinatario,
+        "text": mensagem
       }
     })
 
@@ -27,3 +31,7 @@ def send_message(preJid, mensagemTranscrita):
 
     res = conn.getresponse()
     data = res.read()  
+    
+
+    
+    

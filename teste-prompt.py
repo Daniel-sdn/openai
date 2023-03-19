@@ -1,7 +1,7 @@
 
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 MODEL = "gpt-3.5-turbo"
 

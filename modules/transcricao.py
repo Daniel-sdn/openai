@@ -6,10 +6,15 @@ import http.client
 import io
 from openai import Audio
 from pydub import AudioSegment
+import modules.workmessage as wkmess
 
 def transcreve_data(data):
+    intentWelcome = ['bia, pode me ajudar?','oi bia', 'ola bia', 'olá bia', 'teste', 'menu', 'opções', 'opcoes']
+    intentGoodbye = ['|obrigado pela ajuada','ate mais', 'fim', 'encerrar', 'obrigado bia']
+    # ---------------- Aqui vai a lógica de parse --------------------------
+    messageType = data['messageType']
     instanceKey = data["instance_key"]
-    pushName = data["pushName"]
+    pushName = data["pushName"] 
     remoteJid = data['key']['remoteJid']
     mediaKey = data['message']['audioMessage']['mediaKey']
     directPath = data['message']['audioMessage']['directPath']
@@ -23,7 +28,7 @@ def transcreve_data(data):
         "url": url,
         "mimetype": mimetype,
         "messageType": tipoMensagem
-        }
+         }
     })
     #Busca string audio
     conn = http.client.HTTPSConnection("api5.megaapi.com.br")
@@ -31,10 +36,12 @@ def transcreve_data(data):
         'Content-Type': 'application/json',
         'Authorization': 'Bearer MOK9F6yvV9n0EvGIVsuvB7pPBA'
     }
-    conn.request("POST", "/rest/instance/downloadMediaMessage/megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA", payload, headers)  
+    conn.request("POST", "/rest/instance/downloadMediaMessage/megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA", payload, headers)
     res = conn.getresponse()
     data = res.read()
     json_str = data.decode("utf-8")
+    #payload = json.dumps(payloadString, indent=4, ensure_ascii=False)
+    # Assume json_str contains the JSON data with the base64-encoded audio
     json_dict = json.loads(json_str)
     # Decode the base64-encoded audio data
     audio_bytes_str = json_dict['data'].split(',')[1]
@@ -51,16 +58,12 @@ def transcreve_data(data):
         wfn = ofn.replace('.ogg','.wav')
         x = AudioSegment.from_file(ofn)
         x.export(wfn, format='wav') 
-    ogg2wav('/home/dani-boy/openai/audio/audioTeste.ogg')       
-    #Transcricao dp audio - whisper openai
-    import openai
-    openai.api_key = "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"
-    #audio_file = open("/home/dani-boy/openai/audio/teste2-mp3-openai.mp3", "rb")
-    audio_file = open("/home/dani-boy/openai/audio/audioTeste.wav", "rb")
-    transcript = openai.Audio.transcribe("whisper-1", audio_file)
-    #translate = openai.Audio.translate("whisper-1", audio_file)
-    texto_transcrib = json.dumps(transcript)
-    data = json.loads(texto_transcrib)
-    mensagemTranscrita = data['text']
+    ogg2wav('/home/dani-boy/openai/audio/audioTeste.ogg')
+    
+    audio_path = "/home/dani-boy/openai/audio/audioTeste.wav"
+        
+    transcribed_text = wkmess.transcribe_audio(audio_path)
+            
+    return transcribed_text, pushName
 
 

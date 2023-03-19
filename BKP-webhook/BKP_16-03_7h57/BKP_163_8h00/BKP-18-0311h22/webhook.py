@@ -30,5 +30,15 @@ if __name__ == "__main__":
     app.debug = True
     app.run()
     
-    
-    
+
+
+# ngrok config add-authtoken 2KqY2nL5yoztw5bVsDkJZKE4LFn_3Euxa7E22j1iDgXCJ4cyM
+# Running on http://127.0.0.1:5000
+# ngrok http 5000
+# https://mega-api-painel.app.br/megaapi/
+
+#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
+
+
+# https://github.com/openai/openai-python
+ 

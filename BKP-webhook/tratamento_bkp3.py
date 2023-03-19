@@ -15,6 +15,8 @@ from langchain import OpenAI
 
 
 def detectarMensagem(data):
+    intentWelcome = ['bia, pode me ajudar?','oi bia', 'ola bia', 'olá bia', 'teste', 'menu', 'opções', 'opcoes']
+    intentGoodbye = ['|obrigado pela ajuada','ate mais', 'fim', 'encerrar', 'obrigado bia']
     # ---------------- Aqui vai a lógica de parse --------------------------
     messageType = data['messageType']
     if messageType == 'audioMessage':  # audio message   
@@ -73,18 +75,12 @@ def detectarMensagem(data):
         
         textotranscrito = (f'{pushName} peguntou: {transcribed_text}\n')
         
-        req.send_message(remoteJid, textotranscrito)
-        
-        
+        # Funçao openai
         import openai
-
         #openai.api_key = "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"
-        
         #os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
         os.environ["OPENAI_API_KEY"] = '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'
-
         MODEL = "gpt-3.5-turbo"
-                
         def ask_ai(valor):
             index = GPTSimpleVectorIndex.load_from_disk('index.json')
             while True: 
@@ -93,25 +89,44 @@ def detectarMensagem(data):
                 req.send_message(remoteJid, (f"Bia: {response.response}"))
                 break
         
-        ask_ai(transcribed_text)
         
-        #req.send_message(remoteJid, transcribed_text)
+        #Tratamento de intents welcomes
+        if textotranscrito.lower() in intentWelcome:
+            message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
+            req.send_message(remoteJid, message)
+            ask_ai(transcribed_text, remoteJid)
         
-        #send_message(remoteJid, mensagemTranscrita)
-        # set_name("Peter")
-        # option = "composing"
-        # set_presence(remoteJid, option)
-        #return remoteJid, mensagemTranscrita 
-        #send_message(remoteJid, mensagemTranscrita)
-                        
-        # word = "Bia"
-        # message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
-        # if word in mensagemTranscrita:
-        #     req.send_message(remoteJid, message)   
-        # else:
-        #     req.send_message(remoteJid, mensagemTranscrita)
+        
+      
+
             
-        # # # return(mensagemTranscrita)    
+    elif messageType == 'conversation':
+        print()
+        print(f"=================  {messageType}   ===========================")
+        pushName = data["pushName"]
+        mensagem = data['message']['conversation']
+        broadcast = data['broadcast']
+        remoteJid = data['key']['remoteJid']
+        fromMe = data['key']['fromMe']
+        
+        #Tratamento de intents welcomes
+        if mensagem.lower() in intentWelcome:
+            message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
+            req.send_message(remoteJid, message)
+            ask_ai(mensagem, remoteJid)
+        
+        #ask_ai(transcribed_text, remoteJid)
+        #status = data['update']['status']
+        # Prints
+        # print('messageType: ', messageType)
+        # print('pushName: ', pushName)
+        # print("remoteJid: ",remoteJid)
+        # print('instancekey: ', instanceKey)
+        # print('broadcast: ', broadcast)
+        
+        #menssage_text = (f"messageType: {messageType}\nFrom me: {fromMe}\n\nOlá {pushName},  \nMensagem: {mensagem } \n\nDevice: {remoteJid}")
+
+
 
         
     elif messageType == "message.ack":
@@ -128,49 +143,6 @@ def detectarMensagem(data):
         # print(f'remoteJid: {remoteJid}')
         # print(f'id: {id}')
         # print(f'fromMe: {fromMe}') 
-            
-    elif messageType == 'conversation':
-        print()
-        print(f"=================  {messageType}   ===========================")
-        pushName = data["pushName"]
-        mensagem = data['message']['conversation']
-        broadcast = data['broadcast']
-        remoteJid = data['key']['remoteJid']
-        fromMe = data['key']['fromMe']
-        #status = data['update']['status']
-        # Prints
-        # print('messageType: ', messageType)
-        # print('pushName: ', pushName)
-        # print("remoteJid: ",remoteJid)
-        # print('instancekey: ', instanceKey)
-        # print('broadcast: ', broadcast)
-        
-        #menssage_text = (f"messageType: {messageType}\nFrom me: {fromMe}\n\nOlá {pushName},  \nMensagem: {mensagem } \n\nDevice: {remoteJid}")
-        
-        
-        import openai
-
-        #openai.api_key = "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"
-        
-        #os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
-        os.environ["OPENAI_API_KEY"] = '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'
-
-        MODEL = "gpt-3.5-turbo"
-                
-        def ask_ai(valor):
-            index = GPTSimpleVectorIndex.load_from_disk('index.json')
-            while True: 
-                query = valor
-                response = index.query(query, response_mode="compact")
-                req.send_message(remoteJid, (f"Bia: {response.response}"))
-                break
-        
-        ask_ai(mensagem)
-
-
-
-        
-        
         
         
         
@@ -228,6 +200,26 @@ def detectarMensagem(data):
         # #openai.Model.list()
         
 
+
+
+
+
+import openai
+
+#openai.api_key = "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"
+        
+#os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
+os.environ["OPENAI_API_KEY"] = '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'
+
+MODEL = "gpt-3.5-turbo"
+                
+def ask_ai(valor, remoteJid):
+    index = GPTSimpleVectorIndex.load_from_disk('index.json')
+    while True: 
+        query = valor
+        response = index.query(query, response_mode="compact")
+        req.send_message(remoteJid, (f"Bia: {response.response}"))
+        break
 
 # import openai
 # import json
