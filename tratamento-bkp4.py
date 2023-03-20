@@ -11,16 +11,20 @@ import modules.workmessage as wkmess
 import time, copy
 from llama_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
 from langchain import OpenAI
-#import modules.botopenai as bot 
+import openai
+#import modules.botopenai as bot
 
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
+
+MODEL = "gpt-3.5-turbo"
 
 def detectarMensagem(data):
-    # ---------------- Aqui vai a lógica de parse --------------------------
+    pushName = data["pushName"]
+    remoteJid = data['key']['remoteJid'] 
     messageType = data['messageType']
     if messageType == 'audioMessage':  # audio message   
-        instanceKey = data["instance_key"]
-        #pushName = data["pushName"]
-        remoteJid = data['key']['remoteJid']
+        instanceKey = data["instance_key"]     
         mediaKey = data['message']['audioMessage']['mediaKey']
         directPath = data['message']['audioMessage']['directPath']
         url = data['message']['audioMessage']['url']
@@ -64,71 +68,12 @@ def detectarMensagem(data):
             x = AudioSegment.from_file(ofn)
             x.export(wfn, format='wav') 
         ogg2wav('/home/dani-boy/openai/audio/audioTeste.ogg')
-        
-                
         audio_path = "/home/dani-boy/openai/audio/audioTeste.wav"
-        
-
         transcribed_text = wkmess.transcribe_audio(audio_path)
-        
-        textotranscrito = (f'Você peguntou: {transcribed_text}\n')
-        
+        textotranscrito = (f'{pushName} peguntou: {transcribed_text}\n')
         req.send_message(remoteJid, textotranscrito)
-        
-        
-        import openai
-
-        #openai.api_key = "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"
-        
-        os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
-        #os.environ["OPENAI_API_KEY"] = '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'
-
-        MODEL = "gpt-3.5-turbo"
-                
-        def ask_ai(valor):
-            index = GPTSimpleVectorIndex.load_from_disk('index.json')
-            while True: 
-                query = valor
-                response = index.query(query, response_mode="compact")
-                req.send_message(remoteJid, (f"🧑🏼‍🎤 Bia: {response.response}"))
-                break
-        
         ask_ai(transcribed_text)
-        
-        #req.send_message(remoteJid, transcribed_text)
-        
-        #send_message(remoteJid, mensagemTranscrita)
-        # set_name("Peter")
-        # option = "composing"
-        # set_presence(remoteJid, option)
-        #return remoteJid, mensagemTranscrita 
-        #send_message(remoteJid, mensagemTranscrita)
-                        
-        word = "Bia"
-        message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
-        if word in mensagemTranscrita:
-            req.send_message(remoteJid, message)   
-        else:
-            req.send_message(remoteJid, mensagemTranscrita)
-            
-        # # return(mensagemTranscrita)    
-
-        
-    elif messageType == "message.ack":
-        instanceKey = data["instance_key"]
-        jid = data['jid']
-        messageType = data['messageType']
-        remoteJid = data['key']['remoteJid']
-        id = data['key']['id']
-        fromMe = data['key']['fromMe']
-        # print(f"================= {messageType}   ===========================")
-        # print(f'instanceKey: {instanceKey}')
-        # print(f'jid: {jid}')
-        # print(f'messageType: {messageType}')
-        # print(f'remoteJid: {remoteJid}')
-        # print(f'id: {id}')
-        # print(f'fromMe: {fromMe}') 
-            
+             
     elif messageType == 'conversation':
         print()
         print(f"=================  {messageType}   ===========================")
@@ -137,26 +82,12 @@ def detectarMensagem(data):
         broadcast = data['broadcast']
         remoteJid = data['key']['remoteJid']
         fromMe = data['key']['fromMe']
-        #status = data['update']['status']
-        # Prints
-        # print('messageType: ', messageType)
-        # print('pushName: ', pushName)
-        # print("remoteJid: ",remoteJid)
-        # print('instancekey: ', instanceKey)
-        # print('broadcast: ', broadcast)
         
-        #menssage_text = (f"messageType: {messageType}\nFrom me: {fromMe}\n\nOlá {pushName},  \nMensagem: {mensagem } \n\nDevice: {remoteJid}")
-        
-        
-        import openai
-
-        #openai.api_key = "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"
-        
-        os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
-        #os.environ["OPENAI_API_KEY"] = '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'
-
-        MODEL = "gpt-3.5-turbo"
-                
+        # openai.api_key = os.getenv("OPENAI_API_KEY")
+        # os.environ["OPENAI_API_KEY"] = input("Paste your OpenAI key here and hit enter:")
+        ask_ai(mensagem)
+    
+    elif messageType == "message.ack":
         def ask_ai(valor):
             index = GPTSimpleVectorIndex.load_from_disk('index.json')
             while True: 
@@ -164,40 +95,13 @@ def detectarMensagem(data):
                 response = index.query(query, response_mode="compact")
                 req.send_message(remoteJid, (f"🧑🏼‍🎤 Bia: {response.response}"))
                 break
-        
-        ask_ai(mensagem)
-
-
-
-        
-        
-        
-        
-        
-        # resp_bot = bot.ask_ai(mensagem)
-        # word = "Pergunta:"
-        # if word in mensagem:
-        #      resposta = bot.ask_ai(mensagem)
-        #      req.send_message(remoteJid, resposta)
-                
-        # # else:
-        # #     req.send_message(remoteJid, mensagemTranscrita)
-        
-        
-        
-        # word = "Bia"
-        # message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
-        # if word in mensagemTranscrita:
-        #     req.send_message(remoteJid, message)   
-        # else:
-        #     req.send_message(remoteJid, mensagemTranscrita)
-            
-        # # # return(mensagemTranscrita) 
-        
-        #req.send_message(remoteJid, menssage_text)
-                
-       
-        
+        instanceKey = data["instance_key"]
+        jid = data['jid']
+        messageType = data['messageType']
+        remoteJid = data['key']['remoteJid']
+        id = data['key']['id']
+        fromMe = data['key']['fromMe']        
+        ask_ai(mensagem)     
         
     elif messageType == 'imageMessage':
         print()
@@ -215,19 +119,77 @@ def detectarMensagem(data):
         pushName = data['pushName']
         broadcast = data['broadcast']
 
+    def ask_ai(valor):
+        index = GPTSimpleVectorIndex.load_from_disk('index.json')
+        while True: 
+            query = valor
+            response = index.query(query, response_mode="compact")
+            req.send_message(remoteJid, (f"🧑🏼‍🎤 Bia: {response.response}"))
+            break
 
 
 
-        #mensagemTranscrita = wkmess('audioTeste.wav')
+def set_name(name):
+    conn = http.client.HTTPSConnection("api5.megaapi.com.br")
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer MOK9F6yvV9n0EvGIVsuvB7pPBA'
+    }
+    payload = json.dumps({
+                "messageData": {
+                "name": name
+                }
+    })
+    conn.request("POST", "/rest/instance/setProfileName/megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA/text", payload, headers)
+    
+    # res = conn.raise_for_status()
+    # print(res.json())
+    
+    
+def set_presence(preJid, status):
+    conn = http.client.HTTPSConnection("api5.megaapi.com.br")
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer MOK9F6yvV9n0EvGIVsuvB7pPBA'
+    }
+    
+    payload = json.dumps({
+      "messageData": {
+        "to": preJid,
+        "option": status
+      }
+    })
+    conn.request("POST", "/rest/chat/megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA/presenceUpdateChat", payload, headers)
+    res = conn.getresponse()
+    data = res.read()    
+
+
+
         
-        # #Transcricao dp audio - whisper openai
-        # import openai
-        # import os
-        # openai.organization = "org-guDH0aNEdRkxo8bOtlGqBstO"
-        # openai.api_key = os.getenv("OPENAI_API_KEY")
-        # #openai.Model.list()
-        
+intentWelcome = ['bia, pode me ajudar?','oi bia', 'ola bia', 'olá bia', 'teste', 'menu', 'opções', 'opcoes']
+intentGoodbye = ['obrigado pela ajuada','ate mais', 'fim', 'encerrar', 'obrigado bia']
+message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"       
 
+
+
+
+        #req.send_message(remoteJid, transcribed_text)
+        
+        #send_message(remoteJid, mensagemTranscrita)
+        # set_name("Peter")
+        # option = "composing"
+        # set_presence(remoteJid, option)
+        #return remoteJid, mensagemTranscrita 
+        #send_message(remoteJid, mensagemTranscrita)
+                        
+        # word = "Bia"
+        # message = "🧑🏼‍🎤Bia: Olá, posso te ajudar?"
+        # if word in mensagemTranscrita:
+        #     req.send_message(remoteJid, message)   
+        # else:
+        #     req.send_message(remoteJid, mensagemTranscrita)
+            
+        # # # return(mensagemTranscrita)    
 
 # import openai
 # import json
@@ -241,9 +203,23 @@ def detectarMensagem(data):
 #     mensagemTranscrita = data['text']
 #     return mensagemTranscrita
 
-
-
+        #status = data['update']['status']
+        # Prints
+        # print('messageType: ', messageType)
+        # print('pushName: ', pushName)
+        # print("remoteJid: ",remoteJid)
+        # print('instancekey: ', instanceKey)
+        # print('broadcast: ', broadcast)
         
+        #menssage_text = (f"messageType: {messageType}\nFrom me: {fromMe}\n\nOlá {pushName},  \nMensagem: {mensagem } \n\nDevice: {remoteJid}")
+        #mensagemTranscrita = wkmess('audioTeste.wav')
+        # #Transcricao dp audio - whisper openai
+        # import openai
+        # import os
+        # openai.organization = "org-guDH0aNEdRkxo8bOtlGqBstO"
+        # openai.api_key = os.getenv("OPENAI_API_KEY")
+        # #openai.Model.list()
+     
 # def send_message(preJid, mensagemTranscrita):
 #     conn = http.client.HTTPSConnection("api5.megaapi.com.br")
 
@@ -284,42 +260,3 @@ def detectarMensagem(data):
 
 # print(response["choices"][0]["message"]["content"])        
  
- 
-
-
-
-
-def set_name(name):
-    conn = http.client.HTTPSConnection("api5.megaapi.com.br")
-    headers = {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer MOK9F6yvV9n0EvGIVsuvB7pPBA'
-    }
-    payload = json.dumps({
-                "messageData": {
-                "name": name
-                }
-    })
-    conn.request("POST", "/rest/instance/setProfileName/megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA/text", payload, headers)
-    
-    # res = conn.raise_for_status()
-    # print(res.json())
-
-
-
-def set_presence(preJid, status):
-    conn = http.client.HTTPSConnection("api5.megaapi.com.br")
-    headers = {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer MOK9F6yvV9n0EvGIVsuvB7pPBA'
-    }
-    
-    payload = json.dumps({
-      "messageData": {
-        "to": preJid,
-        "option": status
-      }
-    })
-    conn.request("POST", "/rest/chat/megaapi-MOK9F6yvV9n0EvGIVsuvB7pPBA/presenceUpdateChat", payload, headers)
-    res = conn.getresponse()
-    data = res.read()

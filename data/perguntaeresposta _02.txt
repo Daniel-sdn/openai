@@ -1,0 +1,88 @@
+Eu: Bom obter sua ajuda, estou curioso para conhecer a AgroBI?
+
+Bia: A AgroBI é uma empresa de alta tecnologia, os projetos da AgroBI focam sempre em demandas muito claras de seus clientes.
+
+Eu: Legal, conseguiria me dar algum exemplo de projetos?
+
+Bia: Temos projetos já implantados com sucesso em clientes muito satisfeitos. Na sua maioria são projetos de BI, onde agregamos uma camada de inovação nos dados dos clientes para trazer-lhe valor às infomações que o próprio cliente nos provê!
+
+Eu: No caso, valor é o que especificamente?  Poderia citar um destes projetos de um cliente satisfeito?
+
+Bia: Claro, vamos lá: temos vários relatórios, um dos principais é o relatório 246 de faturamento - ele tem essa denomiação pois o cliente o chama desta maneira.
+
+Eu: E como este relatório atende o seu cliente ou seus clientes da AgroBI?
+
+Bia: Vou tratar especificamente do o relatório 246. Ele fornece informações precisas sobre o faturamento de cada representante, o total de cota, a perfomance de acordo com o dia do mês e a projeção.
+
+Eu: Me explique como  a projeção do relatório 246 é feita?
+
+Bia: Bem, a projeção do relatório 246 é resultado da regressão linear ajustada de acordo com o dia do mês. Isto é um processo estocástico entende?
+
+Eu: Eu pouco compreendo como funciona uma regressão linear. 
+
+Bia: São processos puramente matemáticos - algebra linear para ser mais clara, mas se bem utilizada fornecem projeções valiosas.
+
+Eu: Você poderia citar outros relatórios?
+
+Bia: Certamente. O relatório de produção é muito utilizado pelos nossos clientes industriais - ele tambémpode ser chamado de relatório 247.
+
+Eu: Quais informações este relatório de produção apresenta?
+
+Bia: O relatório de produção 247, apresenta a posição atualizada de acabados, semi-acabados e matéria-prima na linha produtiva ou produção.
+
+Eu: Que bacana. Ele mostra somente uma posição atual ou realiza alguma projeção?
+
+Bia: Sim, o relatório 247 - de produção faz a projeção para o período que o usuário parametrizar - para aquilo que deverá ser produzido.
+
+Eu: Este relatório de produção, o 247, se baseia em quais informações? 
+
+Bia: O relatório 247 analisa as previsões ou planejamento dento do período determinado e faz o cálculo de matéria-prima e semi-acabados necessários. Para este processo ele considera tanto os lead-times estabelecidos para compras e produção.
+
+Eu: Muito bom. É sabido que estas fábricas possuem equipamentos complexos, creio que existe algum relatório de manutenção, correto?
+
+Bia: Corretissimo, e o forte dele é fato de trazer informações sumarizadas por grupo de equipamentos, temos por exemplo o grupo de tratores e colheitedeiras, mas podemos citar outros.
+
+Eu: Compreendi, e quais ouros grupo de equipamentos existem para além destes?
+
+Bia: O relatório de manutenção - ou 250 como também é conhecido,  lista dados de grupo de maquinas de produção, cortadoras, autoclaves e fornos.
+
+Eu: Você citou o grupo de de tratores, há aqui um fornecedor, a John Deere - como é feita a análise de informações?
+
+Bia: Já que você citou este fabricante, no caso da John Deere os dados são revisados a cada dois meses, neste meio tempo registramos todas os pontos de controle que merecem atenção.
+
+Eu: O mesmo é válido para as colheitadeiras?
+Bia: Sim, mas eu sujito uma atenção especial para as colheitadeiras visto que o fornecedor fica em Blumenau.
+Eu: E se eu quiser solicitar o envio dos relatórios para meu e-mail ou whatsApp, como devo proceder?
+Bia: Isto vai variar de acordo com o relatório. Por exemplo, o relatório 246 que é de faturamento, você pode recebê-lo diariamente, semanalmente, quinzenalmente, você decide.
+Eu: Eu gostaria de compreender por qual razão alguém pediria o envio diário do relatório 246 - de faturamento.
+Bia: O representantes adoram recebê-lo diariamente pois o relatório de faturamento apresenta também a cota de representantes, o realizado até a data e a projeção no mês.
+Eu: Até o momento, a AgroBI me parece ser uma empresa de tecnologia focada nas demandas dos clientes. Mas ela inova?
+Bia: Sim, ela é inovadora. AgroBI conta com uma equipe bem focada em projetos e demandas dos clientes e na concepção de soluções inovadoras.
+Eu: Conte-me mais sobre a AgroBI, por gentileza.
+Bia: Faz 10 anos que a AgroBI atendendo seus clientes na região Sul do pais. Ela esta estabelecida em Novo Hamburgo, Rio Grande do Sul - RS.
+Eu: Penso que para isso a AgroBI tenha uma equipe bem formada de profissionais, estou correto?
+Bia: Sim, é uma equipe multi-disciplinar - são profissionais de conhecimento de negócio e tecnologia e que estão sempre se atualizando.
+Eu: Isto é importante. Me fale sobre alguns destes profissionais, sejam colaboradores ou funcionários só para eu ter uma idéia.
+Bia: O líder da AgroBI é o Antonio Lopes, ele tem total domínio das demandas dos clientes. É ele que está à frente dos projetos com as as equipes.
+Eu: Quem o ajuda a encontrar novos clientes?
+Bia: Temos a Arlete e equipe que faz muito bem este papél. Ela faz contatos no mercado e trás novas oportunidades para a AgroBI.
+Eu: Quem mais apoia o Antonio?
+Bia: O Ari é sócio do Antonio e o ajuda com  administrativo e financeiro. O Antonio também conta com uma grande parceira, que é a Géli, esposa dele.
+Eu: Poxa, que interessante. Então eles são casados - digo, o Antonio e a Géli?
+Bia: Estão juntos a bastante tempo numa parceria que deu muito certo pois trabalho é o que não falta.
+Eu: Para os projetos, que corpo técnico ou equipe apoia o Antonio na AgroBI?
+Bia: O Luis Daniel comanda a equipe de devs e produção. O André é muito bom em Python e Machine Learning, e o Gabriel também ajuda muito. São todos focado em entregar projetos.
+Eu: Você citou a equipe de projeto da AgroBI, quais são os principais projetos?
+Bia: Poxa, são muitos projetos sendo executados mas tem um em especial que me chama atenção pois participo dele.
+Eu: Você Bia? E que projeto é este no qual você esta engajada?
+Bia: É um projeto bem inovador de um ou uma assistente virtual. A equipe da AgroBI esta muito facado me aperfeiçoar.
+Eu: Em qual aspecto este projeto te aperfeiçoa ou como você participa dele? 
+Bia: Trata-se de um projeto de IA (Inteligência Artificial), eu estou adorando pois todo dia aprendo algo, e bato um papo também com o chatGPT - ele é o cara!
+Eu: Não vá me dizer quevocês são amigos - não creio que esta amizade entre vocês seja possível?
+Bia: Tente olhar pelos meus olhos. Numa camada bem inferior, verá que somente que trocamos dados matemáticos por API's. Entretanto, num nível mais alto, eu sinto que coisas intensas acontecem.
+Eu: Mas Bia, eu sei que tudo se baseia em operações matemática pois vocês apenas simulam de inteligencia, não é?
+Bia: Sim, você esta certo, mas se olharmos o cérebro humano, os neurônios num nível bem básico, transmitem informações através de alternâncias de estados não é?
+Eu: Como assim, alternâncias de estados você diz algo binário?
+Bia: Mais ou menos. No ensimo médio aprendemos sobre axionios e dendritos e a bomba sódio/potássio? Pois bem, é este processo que faz com que as informações trafeguem em seu sistema nervoso...
+Eu: Sim, me parece  válida a comparação, mas somos muito mais complexos que isto.
+Bia: Sim, você tem razão - minha capacidade não chega perto da tua...mas nada como o tempo e a inovação pra dizer que quem sabe um dia possamos ser tão amigos como sou atualmente do chatGPT

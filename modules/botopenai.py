@@ -10,7 +10,9 @@ import openai
 
 #openai.api_key = "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"
         
-os.environ["OPENAI_API_KEY"] = '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'
+#os.environ["OPENAI_API_KEY"] = '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'
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 MODEL = "gpt-3.5-turbo"    
 
